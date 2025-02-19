@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html leng="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile of {{user.name}}</title>
+    <link rel="stylesheet" type="text/css" href="../static/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="intro">
+            <div class="image">
+                <img src="../static/avatar.jpg">
+            </div>
+            <div class="bio">
+                <h1 class="name">{{user.name}}</h1>
+                <p class="profession">{{user.bio}}</p>
+            </div>
+        </div>
+
+        <div class="contents">
+            <div class="info">
+                <h1>Infomation</h1>
+                <div class="detail-info">
+                    <h2>Birthday</h2>
+                    <p>March 14, 2000</p>
+                </div>
+                <div class="detail-info">
+                    <h2>Email</h2>
+                    <p>Caotuanth2000@gmail.com</p>
+                </div>
+
+                <div class="detail-info">
+                    <h2>Phone</h2>
+                    <p>+79533608789</p>
+                </div>
+                <div class="detail-info">
+                    <h2>Adress</h2>
+                    <p>Saint petersburg</p>
+                </div>                  
+            </div>
+
+            <div class="intro-about">
+                <h1>About me</h1>
+                <p>Hello, I'm Tuan - a first year master's student majoring in
+                    information security at the university ITMO.</p>
+            </div>
+
+            <div class="Edu">
+                <h1>Education</h1>
+                <div class="detail-edu">
+                    <div class="timeline-block">
+                        <h2>Bachelor of Information Security Technology</h2>
+                        <p>Information Technologies, Mechanics and Optics University, Russian</p>
+                        <time>2019 - 2024</time>
+                    </div>
+                    <div class="timeline-block">
+                        <h2>Master's Student in Information Security Technology</h2>
+                        <p>Information Technologies, Mechanics and Optics University, Russian</p>
+                        <time>2024 - present</time>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pg-skill">
+                <h1>Programming skills</h1>
+                <div class="detail-skills">
+                    <span class="skill-tag skill-html">HTML</span>
+                    <span class="skill-tag skill-css">CSS</span>
+                    <span class="skill-tag skill-js">Javascript</span>
+                    <span class="skill-tag skill-py">Python</span>         
+                </div>
+            </div>
+
+            <div class="social_media">
+                <h1>Folow me</h1>
+                <ul>
+                    <li><a href="#"><i class="fa fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa fa-vk"></i></a></li>
+                    <li><a href="#"><i class="fa fa-github"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
