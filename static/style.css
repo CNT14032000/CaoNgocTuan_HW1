@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster:ital,wght@0,100..700;1,100..700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Lobster', cursive;
+}
+body {
+    background: #f3f3f3;
+}
+
+.wrapper {
+	margin: 25px auto;
+	max-width: 70rem;
+	background-color: #e9e9e9;
+	display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+	box-shadow: 0px 0px 15px 4px #b3b3b3;
+}
+
+.intro {
+    position: relative;
+	background-color: #fff;
+	padding: 2rem 1rem;
+	text-align: center;
+	user-select: none;
+}
+.image img {
+    width: 20%;
+    height: 10%;
+    border-radius: 30%;
+    object-fit: cover;
+    margin-bottom: 5px;
+}
+.bio .name {
+	font-size: 2rem;
+	text-align: center;
+	color:#333;
+}
+.bio .profession {
+	font-size: 1rem;
+	text-align: center;
+    font-style: italic;
+	color: #555;
+}
+
+.contents {
+	background-color: #f9fafb; 
+    /*#9099a0;*/
+}
+.info, .intro-about, .Edu, .pg-skill, .social_media{
+    border-radius: 15px;
+    background-color: #e9e9e9 ;
+    padding: 24px;
+    margin: 16px 0;
+}
+
+.contents .info h1,
+.contents .intro-about h1,
+.contents .Edu h1,
+.contents .pg-skill h1,
+.contents .social_media h1{
+    margin-bottom: 10px;
+    border-bottom: 2px solid #9099a0;
+    color: #353c4e;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    font-size: 2rem;
+}
+.contents .info p,
+.contents .intro-about p,
+.contents .Edu p,
+.contents .pg-skill p,
+.contents .social_media p{
+    font-size: 1rem;
+    color: #919aa3;
+}
+
+.timeline-block {
+	position: relative;
+	padding-left: 30px;
+}
+.timeline-block:not(:last-of-type) {
+	margin-bottom: 1rem;	
+}
+.timeline-block h2 {
+	font-size: 1.5rem;
+	margin: 5px 0;
+	transition: all 0.3s;
+}
+.timeline-block time {
+    margin-bottom: 20px;
+	font-size: 1rem;
+	color:  #919aa3;
+}
+
+.timeline-block::before {
+	position: absolute;
+	content: '';
+	width: 15px;
+	height: 15px;
+	background-color: white;
+	border: 3px solid #14253e;
+	border-radius: 50%;
+	left: -10px;
+	top: -5px;
+}
+.timeline-block::after {
+	position: absolute;
+	content: '';
+	width: 3px;
+	height: 100%;
+	background-color: #14253e;
+	left: -1px;
+	top: 13px;
+}
+.timeline-block:hover h2 {
+	color: #00a6a6;
+}
+.timeline-block:hover::before {
+	animation: circle 1.2s infinite;
+}
+
+.detail-skills{
+	display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+.skill-tag {
+    padding: 8px 16px;
+    border-radius: 9999px;
+    font-size: 1rem;
+    font-weight: 500;
+}
+.skill-html { background-color: #dbedff; color: #1e40af; }
+.skill-css { background-color: #d1fae5; color: #065f46; }
+.skill-js { background-color: #ede9fe; color: #4c1d95; }
+.skill-py { background-color: #fef9c3; color: #78350f; }
+
+.social_media ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+}
+.social_media li {
+    color: #4b5563;
+    font-size: 2.5rem;
+    transition: color 0.3s ease;
+}
+.social_media li a :hover {
+    color: #2563eb;
+}
+
+
+
+
